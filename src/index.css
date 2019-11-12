@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: none;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-areas: 
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "r r m m m m m m m m m m"
+    "j j s s s s s s s s s s";
+}
+
+.room {
+    grid-area: r;
+}
+
+.messagelist {
+    grid-area: m;
+    background: white;
+    padding: 20px;
+}
+
+.newroom {
+    grid-area: j;
+    background: white;
+    padding: 5px;
+    background: lightcyan;
+    overflow: hidden;
+}
+
+.sendmessage {
+    grid-area: s;
+    background: white;
+    width: 100%;
+    padding: 5px;
+    background: lightcyan;
+    overflow: hidden;
+}
+
+#message {
+    background: Dodgerblue;
+    color: white;
+    margin: 5px;
+    padding: 5px 20px;
+    border-radius: 15px;
+    width: max-content;
+    position: relative;
+}
+
+#message-sender {
+    font-size: 12px;
+}
+
+#message-content {
+    font-size: 18px;
+}
+
+#sendmessage-input {
+    width: 100%;
+    height: 50px;
+    overflow-x: hidden;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+#newroom-input {
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+}
+
+#rooms {
+    background: royalblue;
+    display: block;
+    height: 100%;
+    overflow-y: auto;
+}
+
+#rooms-title {
+    padding: 10px;
+}
+
+#rooms-list {
+    padding: 0 15px 15px 15px;
+}
+
+#rooms-name {
+    display: block;
+    color: white;
+    padding: 5px 10px;
+    margin: 2px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+#rooms-name:hover {
+    background: cornflowerblue;
+}
+
+#joinroom {
+    text-align: center;
+    position: relative;
+    top: 50%;
+}
