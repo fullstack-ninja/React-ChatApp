@@ -24,11 +24,11 @@ class App extends React.Component {
   
   componentDidMount() {
     const tokenProvider = new TokenProvider({
-      url: "https://us1.pusherplatform.io/services/chatkit_token_provider/v1/09e6bf6d-db64-47a1-92fe-911e2fd6287b/token"
+      url: "mychatkitapitoken"
     });
 
     const chatManager = new ChatManager({
-      instanceLocator: "v1:us1:09e6bf6d-db64-47a1-92fe-911e2fd6287b",
+      instanceLocator: "instance",
       userId: "michael",
       tokenProvider: tokenProvider
     });
